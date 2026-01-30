@@ -13,7 +13,7 @@ import {
   }  from "@google/generative-ai";
 
   
-  const apiKey =process.env.NEXT_PUBLIC_NOT_SECRET_MESSAGE;
+  const apiKey =AIzaSyCwvuO3pkkeMskrksYmkgIvGswLJ7wpot8;
   const genAI = new GoogleGenerativeAI(apiKey);
   const model = genAI.getGenerativeModel({
     model: "gemini-1.5-flash-latest",

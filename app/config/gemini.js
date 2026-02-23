@@ -14,7 +14,7 @@ import {
 
   
   const apiKey =process.env.NEXT_PUBLIC_NOT_SECRET_MESSAGE;
-  const genAI = new GoogleGenerativeAI({apiKey});
+  const genAI = new GoogleGenerativeAI(apiKey);
   console.log(apiKey);
   const model = genAI.getGenerativeModel({
     model: "gemini-3-flash-preview",

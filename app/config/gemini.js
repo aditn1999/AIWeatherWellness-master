@@ -14,9 +14,10 @@ import {
 
   
   const apiKey =process.env.NEXT_PUBLIC_NOT_SECRET_MESSAGE;
-  const genAI = new GoogleGenerativeAI(apiKey);
+  const genAI = new GoogleGenerativeAI({apiKey});
+  console.log(apiKey);
   const model = genAI.getGenerativeModel({
-    model: "gemini-1.5-flash-latest",
+    model: "gemini-3-flash-preview",
     systemInstruction: 
     `When a sender send a  message  that is Hii then only  reply with message 'Welcome to AiWeatherWellness! 
     How can I help you?' with weather Icon emoji and Do not include this welcome 
